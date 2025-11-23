@@ -5,7 +5,8 @@
             "identifier": "testing:mybiome"
         },
         "components": {
-            "minecraft:surface_builder": { //การบคุม materials ที่ใช้สร้างภูมิประเทศ
+            //การบคุม materials ที่ใช้สร้างภูมิประเทศ
+            "minecraft:surface_builder": {
                 "builder": {
                     "type": "minecraft:overworld",
                     "sea_floor_depth": 3,
@@ -16,7 +17,8 @@
                     "sea_floor_material": "minecraft:lava"
                 }
             },
-            "minecraft:replace_biomes": { //การนที่ไบโอม
+            //การนที่ไบโอม
+            "minecraft:replace_biomes": {
                 "replacements": [
                     {
                         "dimension": "minecraft:overworld",
