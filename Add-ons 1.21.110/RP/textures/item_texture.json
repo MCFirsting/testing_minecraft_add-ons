@@ -1,0 +1,21 @@
+{
+    "resource_pack_name": "MyResource",
+    "texture_name": "atlas.items",
+    "texture_data": {
+        "storage_item": {
+            "textures": [
+                "textures/items/storage_item"
+            ]
+        },
+        "missing_stick": {
+            "textures": [
+                "textures/items/missing_stick"
+            ]
+        },
+        "camera": {
+            "textures": [
+                "textures/items/camera"
+            ]
+        }
+    }
+}

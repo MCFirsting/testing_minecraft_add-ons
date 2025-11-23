@@ -1,0 +1,46 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "This is the testing for the new functions",
+    "name": "Minecraft Add-ons 1.21.110",
+    "uuid": "da8fa219-f67b-40f1-a628-b7dd978b7b35",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      100
+    ]
+  },
+  "modules": [
+    {
+      "description": "This is the testing for the new function",
+      "type": "script",
+      "entry": "main.js",
+      "language": "javascript",
+      "uuid": "150bb918-ccfc-43cf-86a5-2994c3b0bd23",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "a380f29a-eb07-4c99-aa33-7dadfd24f3b1",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.3.0"
+    }
+  ]
+}

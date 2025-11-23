@@ -1,0 +1,23 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "demo:camera",
+            "menu_category": {
+                "category": "items"
+            }
+        },
+        "components": {
+            "minecraft:icon": {
+                "textures": {
+                    "default": "camera"
+                }
+            },
+            "minecraft:display_name": {
+                "value": "Camera"
+            },
+            "minecraft:max_stack_size": 1,
+            "demo:camera_api": {}
+        }
+    }
+}

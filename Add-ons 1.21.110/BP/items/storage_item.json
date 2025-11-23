@@ -1,0 +1,35 @@
+{
+    "format_version": "1.21.40",
+    "minecraft:item": {
+        "description": {
+            "identifier": "testing:storage_item",
+            "menu_category": {
+                "category": "construction"
+            }
+        },
+        "components": {
+            "minecraft:icon": {
+                "textures": {
+                    "default": "storage_item"
+                }
+            },
+            "minecraft:max_stack_size": {
+                "value": 1
+            },
+            "minecraft:can_destroy_in_creative": false,
+            "minecraft:display_name": {
+                "value": "Storage Item"
+            },
+            "minecraft:storage_item": {
+                "max_slots": 64,
+                "allow_nested_storage_items": true,
+                "banned_items": [
+                    "minecraft:shulker_box"
+                ]
+            },
+            "minecraft:bundle_interaction": {
+                "num_viewable_slots": 64
+            }
+        }
+    }
+}
