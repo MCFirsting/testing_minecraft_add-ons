@@ -1,1 +1,1 @@
-# testing_minecraft_add-ons
+# Testing Minecraft Add-ons
