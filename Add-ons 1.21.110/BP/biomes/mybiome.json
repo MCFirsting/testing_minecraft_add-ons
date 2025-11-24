@@ -5,28 +5,37 @@
             "identifier": "testing:mybiome"
         },
         "components": {
-            //การบคุม materials ที่ใช้สร้างภูมิประเทศ
+            //การบคุมวัสดุที่ใช้สร้างภูมิประเทศ
             "minecraft:surface_builder": {
                 "builder": {
                     "type": "minecraft:overworld",
+                    //ความลึกของพื้นทะเล
                     "sea_floor_depth": 3,
+                    //วัสดุชั้นบน
                     "top_material": "minecraft:moss_block",
+                    //วัสดุชั้นกลาง
                     "mid_material": "minecraft:clay",
+                    //วัสดุรองพื้น
                     "foundation_material": "minecraft:mud",
+                    //วัสดุทางทะเล
                     "sea_material": "minecraft:lava",
+                    //วัสดุทางทะเลลึก
                     "sea_floor_material": "minecraft:lava"
                 }
             },
-            //การนที่ไบโอม
+            //การแทนที่ไบโอม
             "minecraft:replace_biomes": {
                 "replacements": [
                     {
                         "dimension": "minecraft:overworld",
+                        //ไบโอมที่จะแทนที่
                         "targets": [
                             "minecraft:beach",
                             "minecraft:plains"
                         ],
+                        //ความกว้างของพื้นที่
                         "amount": 0.5,
+                        //ความถี่ในการเกิด
                         "noise_frequency_scale": 25
                     }
                 ]
