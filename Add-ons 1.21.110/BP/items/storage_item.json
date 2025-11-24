@@ -1,4 +1,5 @@
 {
+//รูปแบบเวอร์ชั่นที่แนะนำ (1.21.40)
     "format_version": "1.21.40",
     "minecraft:item": {
         "description": {
@@ -20,14 +21,20 @@
             "minecraft:display_name": {
                 "value": "Storage Item"
             },
+            //ระบบเก็บของในไอเทม
             "minecraft:storage_item": {
+            //จำนวนช่องเก็บของสูงสุด
                 "max_slots": 64,
+                //อนุญาตให้ใส่ไอเทมเก็บของอื่นๆ ซ้อนลงไปได้ (เช่น เอาถุงใส่ในถุง)
                 "allow_nested_storage_items": true,
+                //รายชื่อไอเทมที่ "ห้าม" ใส่เข้ามาในถุงนี้
                 "banned_items": [
                     "minecraft:shulker_box"
                 ]
             },
+            //ส่วนการแสดงผล: การโต้ตอบแบบ Bundle
             "minecraft:bundle_interaction": {
+            //จำนวนช่องไอเทมที่จะโชว์
                 "num_viewable_slots": 64
             }
         }
