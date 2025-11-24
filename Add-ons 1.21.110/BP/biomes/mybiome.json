@@ -5,7 +5,7 @@
             "identifier": "testing:mybiome"
         },
         "components": {
-            //การบคุมวัสดุที่ใช้สร้างภูมิประเทศ
+            //กำหนดวัสดุที่ใช้สร้างภูมิประเทศ
             "minecraft:surface_builder": {
                 "builder": {
                     "type": "minecraft:overworld",
@@ -17,9 +17,9 @@
                     "mid_material": "minecraft:clay",
                     //วัสดุรองพื้น
                     "foundation_material": "minecraft:mud",
-                    //วัสดุทางทะเล
+                    //วัสดุที่เป็นของเหลว
                     "sea_material": "minecraft:lava",
-                    //วัสดุทางทะเลลึก
+                    //วัสดุพื้นใต้น้ำ
                     "sea_floor_material": "minecraft:lava"
                 }
             },
@@ -28,14 +28,14 @@
                 "replacements": [
                     {
                         "dimension": "minecraft:overworld",
-                        //ไบโอมที่จะแทนที่
+                        //ระบุชื่อไบโอมเดิมที่จะถูกแทนที่
                         "targets": [
                             "minecraft:beach",
                             "minecraft:plains"
                         ],
-                        //ความกว้างของพื้นที่
+                        //โอกาสในการแทนที่
                         "amount": 0.5,
-                        //ความถี่ในการเกิด
+                        //ขนาดความถี่
                         "noise_frequency_scale": 25
                     }
                 ]
