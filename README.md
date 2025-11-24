@@ -1,1 +1,1 @@
-# Testing Minecraft Add-ons
+# Example for Minecraft Add-ons Creator from many versions
