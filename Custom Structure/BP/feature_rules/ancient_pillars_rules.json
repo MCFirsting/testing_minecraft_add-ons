@@ -1,0 +1,40 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:feature_rules": {
+        "description": {
+            "identifier": "test:ancient_pillars_rules",
+            "places_feature": "test:ancient_pillars" // เรียกใช้ Feature
+        },
+        "conditions": {
+            "placement_pass": "surface_pass", // วางบนพื้นผิวโลก
+            "minecraft:biome_filter": [
+                {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "forest" // ให้เกิดเฉพาะในที่ป่า
+                }
+            ]
+        },
+        "distribution": {
+            "iterations": 3, // พยายามวางกี่ครั้งใน 1 chunk
+            "x": {
+                //ระยะของตำแหน่ง
+                "extent": [
+                    16,
+                    64
+                ],
+                "distribution": "uniform" //ประเภทการกระจาย
+            },
+            "y": "q.heightmap(v.worldx, v.worldz)", // วางที่ความสูงตามพื้นโลก
+            "z": {
+                //ระยะของตำแหน่ง
+                "extent": [
+                    16,
+                    64
+                ],
+                "distribution": "uniform" //ประเภทการกระจาย
+            },
+            "scatter_chance": 25 // โอกาสเกิด (ยิ่งน้อยยิ่งหายาก)
+        }
+    }
+}

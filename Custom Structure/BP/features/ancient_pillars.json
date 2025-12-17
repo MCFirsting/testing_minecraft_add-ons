@@ -1,0 +1,20 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:structure_template_feature": {
+        "description": {
+            "identifier": "test:ancient_pillars" // ชื่อ ID สำหรับอ้างอิง
+        },
+        "structure_name": "mystructure:ancient_pillars", // ชื่อไฟล์ structure (ต้องมี mystructure)
+        "adjustment_radius": 3, // รัศมีเกลี่ยพื้นที่รอบๆ
+        "facing_direction": "random", // ทิศทางที่หัน (random, north, south)
+        "constraints": { // เงื่อนไขพื้นฐาน (เช่น ต้องปักบนดิน)
+            "grounded": {}, //เกิดพื้นดิน
+            "unburied": {}, //เกิดบนอากาศ
+            "block_intersection": { //ระบุบล็อกที่ต้องการจะตัดผ่าน (เพิ่มกี่อย่างก็ได้)
+                "block_allowlist": [
+                    "minecraft:air"
+                ]
+            }
+        }
+    }
+}
